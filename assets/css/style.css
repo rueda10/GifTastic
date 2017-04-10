@@ -1,0 +1,47 @@
+.header, .middle-content {
+  border-bottom: solid thin black;
+}
+
+/* SPORT BUTTONS */
+#sports-buttons {
+  padding: 20px;
+}
+
+.sport {
+  margin: 5px 10px;
+}
+
+.clicked {
+  background-color: navy;
+  color: white;
+}
+
+/* ADD SPORT FORM */
+#sports-form {
+  width: 300px;
+  margin: 20px auto;
+}
+
+
+/* GIF AREA */
+.container {
+  padding: 20px 0px 15px 0px;
+  text-align: center;
+}
+
+.gif-div {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.gif-img {
+  cursor: pointer;
+  border: solid thin black;
+}
+
+.rating {
+  text-align: center;
+  border-left: solid thin black;
+  border-right: solid thin black;
+  border-bottom: solid thin black;
+}
