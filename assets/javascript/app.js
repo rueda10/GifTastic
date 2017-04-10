@@ -23,7 +23,7 @@ function displayGifs() {
       var containerDiv = $('<div class="gif-div">');
       var imgElement = $('<img class="gif-img">');
       var ratingElement = $('<p class="rating">');
-      imgElement.attr("src", gif.images.fixed_height_still.url);
+      imgElement.attr("src", gif.images.fixed_height_still.url.replace("http://", "https://"));
       imgElement.attr("type", "paused");
       ratingElement.html("Rating: " + gif.rating.toUpperCase());
       containerDiv.append(imgElement);
@@ -38,10 +38,10 @@ function displayGifs() {
         // otherwise, change it to still gif
         if (src.includes("paused")) {
           $(this).attr("type", "playing");
-          $(this).attr("src", gif.images.fixed_height.url);
+          $(this).attr("src", gif.images.fixed_height.url.replace("http://", "https://"));
         } else {
           $(this).attr("type", "paused");
-          $(this).attr("src", gif.images.fixed_height_still.url);
+          $(this).attr("src", gif.images.fixed_height_still.url.replace("http://", "https://"));
         }
       });
     });
