@@ -8,7 +8,7 @@ function displayGifs() {
   removeClickedClass();
   $(this).addClass("clicked");
   var sport = $(this).attr("sport-name");
-  var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + sport + "&api_key=dc6zaTOxFJmzC&limit=10&rating=pg-13";
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + sport + "&api_key=dc6zaTOxFJmzC&limit=10&rating=pg-13";
 
   $.ajax({
     url: queryURL,
